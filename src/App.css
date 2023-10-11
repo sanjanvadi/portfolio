@@ -1,38 +1,130 @@
-.App {
+.home{
+    margin-top: 3.5em;
+    color: aliceblue;
+}
+
+.head1 {
+    /* display: flex; Use flexbox to create a row layout */
+    /* flex-direction: row; */
+    /* justify-content: space-evenly; Center the headings horizontally */
+    padding: 50px;
+    background-color: #36372d;
+    /*align-items: center; /* Center the headings vertically */
+}
+
+.head2{
+    
+    padding: 50px;
+    background-color: #44453a;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit:contain; 
+}
+
+.links{
+    text-align: right;
+}
+
+.logo{
+    color:beige;
+}
+
+.links a {
+    color: white; /* Set the color of the links to white */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px; /* Add some horizontal spacing between links */
+}
+
+.navbar {
+    position: fixed;
+    top: 0; /* Stick it to the top of the viewport */
+    left: 0; /* Align it to the left edge of the viewport */
+    right: 0; /* Align it to the right edge of the viewport */
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Push the logo to the left and links to the right */
+    align-items: center; /* Vertically align items within the navbar */
+    background-color: #1E2019; /* Add a background color (for visualization purposes) */
+    padding: 10px; /* Add some padding for spacing */
+    z-index: 999;
+}
+.navbar2 {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-around; /* Push the logo to the left and links to the right */
+    align-items: center; /* Vertically align items within the navbar */
+    background-color: #1E2019; /* Add a background color (for visualization purposes) */
+    height: 80px;
+    color: aliceblue;
+    margin-top: -10px;
+}
+
+.headImg{
+    position: relative;
   text-align: center;
+  /* color: white; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .imgHeading{
+    font-size: 4em;
+    color: aliceblue;
+    
+      @media screen and (max-width: 768px) {
+        font-size: 3em; /* Adjust font size for screens with a maximum width of 768px */
+      }
+    
+      @media screen and (max-width: 480px) {
+        font-size: 2em; /* Adjust font size for screens with a maximum width of 480px */
+      }
   }
-  to {
-    transform: rotate(360deg);
+  .imagePara{
+    font-size: 2em;
+    color: aliceblue;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1em; /* Adjust font size for screens with a maximum width of 768px */
+      }
+    
+      @media screen and (max-width: 480px) {
+        font-size: 0.5em; /* Adjust font size for screens with a maximum width of 480px */
+      }
   }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    background-color: #44453a;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center; /* Center the input fields in the row */
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 100%;
 }
