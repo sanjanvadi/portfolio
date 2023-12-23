@@ -1,19 +1,30 @@
+import {Typography} from '@mui/material'
+import 'animate.css'
+
 const Home = ()=>{
+    const nameArr = [' ','S','a','n','j','a','n',' ','V','a','d','i'];
+
     return(
-        <div id="home" class="home">
-            <div class="head1">
-                <h1 class="animate__animated animate__fadeInLeft">Heading goes Here</h1>
-                <br></br>
-                <p class="animate__animated animate__fadeInLeft animate__delay-1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="head2">
-                <h1 class="animate__animated animate__fadeInRight animate__delay-2s">Heading goes Here</h1>
-                <br></br>
-                <p class="animate__animated animate__fadeInRight animate__delay-3s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="home" className="home">
+            <div className="head1">
+                <Typography variant="h3" component='h4'>
+                    Hello, I'm
+                    <span id='letters' className='teal'> 
+                        {nameArr.map((letter, index) => (
+                            <span className='animate__animated animate__bounce animate__infinite' key={index}>{letter}</span>
+                        ))}
+                    </span>
+                    {/* Full-Stack Developer */}
+                </Typography> 
+                <Typography className="aboutText">
+                        A passionate and results-driven software developer with
+                        <br/>
+                        a Master's in Computer Science from Stevens Institute of Technology.
+                    </Typography>
+                {/* </div> */}
             </div>
         </div>
     )
 }
-
 
 export default Home;

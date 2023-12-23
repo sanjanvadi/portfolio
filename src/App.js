@@ -3,10 +3,10 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import 'animate.css';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
 import About from './components/About';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -15,14 +15,11 @@ function App() {
       <div>
         <Navbar />
         <Home/>
+        <Skills/>
+        <Projects/>
         <About/>
-        <Contact/>
+        {/* <Contact/> */}
         <Footer/>
-        <Routes>
-          <Route exact path="/" element={Home} />
-          <Route path="/about" element={About} />
-          <Route path="/contact" element={Contact} />
-        </Routes>
       </div>
     </Router>
     </div>

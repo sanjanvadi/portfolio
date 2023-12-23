@@ -1,11 +1,35 @@
+import { Typography } from "@mui/material";
+
 const About = ()=>{
     return(
-        <div id="about" class="headImg">
-            <img src="https://cdn.pixabay.com/photo/2015/05/10/16/41/dandelions-761104_1280.jpg"></img>
-            <div class="centered">
-                <h1 class="imgHeading animate__animated animate__fadeInDown animate__delay-4s">Heading on an Image</h1>
-                <br></br>
-                <p class="imagePara animate__animated animate__fadeInDown animate__delay-5s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div id="about" className="about">
+            <div className="container">
+                <br/>
+                <br/>
+                <h1>About me</h1>
+                <div className="aboutBody">
+                    
+                    <br/>
+                    <Typography className="aboutText1">
+                        I'm not just a coder; I'm a creator. I've designed and developed diverse projects,
+                        <br/>
+                        from a pet health management platform to a real estate web application,
+                        <br/>
+                        an e-commerce website, and even an event platform reminiscent of Ticketmaster.
+                        <br/>
+                        My technical expertise extends to frameworks like React.js and AngularJS,
+                        <br/>
+                        databases including MySQL and MongoDB, and cloud services such as AWS.
+                    </Typography> 
+                    <br/>
+                    <Typography className="aboutText1">
+                        I'm on a constant quest to create meaningful and efficient solutions,
+                        <br/>
+                        and I'm excited to take on new challenges and collaborate
+                        <br/>
+                        with others who share the same passion for innovation.
+                    </Typography>
+                </div>
             </div>
         </div>
     )
