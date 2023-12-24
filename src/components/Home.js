@@ -8,11 +8,11 @@ const Home = ()=>{
         <div id="home" className="home">
             <div className="head1">
                 <Typography variant="h3" component='h4'>
-                    Hello, I'm
-                    <span id='letters' className='teal'> 
-                        {nameArr.map((letter, index) => (
-                            <span className='animate__animated animate__bounce animate__infinite' key={index}>{letter}</span>
-                        ))}
+                    Hi, I'm
+                    <span id='letters' className='teal'> Sanjan Vadi
+                        {/* {nameArr.map((letter, index) => (
+                            <h1 className='animate__animated animate__bounce animate__infinite' key={index}>{letter}</h1>
+                        ))} */}
                     </span>
                     {/* Full-Stack Developer */}
                 </Typography> 

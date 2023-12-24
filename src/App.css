@@ -1,6 +1,6 @@
 /* global */
 body {
-  background-color: #050505;
+  background: #050505;
   /* background-image: url(https://media3.giphy.com/media/WoD6JZnwap6s8/giphy.gif?cid=ecf05e471gjgaozxvinziv60qrcqqn6klwx7s9wc2c6yk0go&ep=v1_gifs_search&rid=giphy.gif&ct=g); */
   color: #f5f1e3;
 }
@@ -42,9 +42,24 @@ body {
 
 /* Home */
 .teal {
-  color: #1b9aaa;
   font-size: 1.3em;
-}
+  color: transparent; /* Set text color to transparent */
+  background-clip: text; /* Apply the gradient to the text content */
+  background-image: linear-gradient(
+    130deg,
+    hsl(185deg 100% 50%) 0%,
+    hsl(181deg 86% 54%) 11%,
+    hsl(175deg 85% 56%) 22%,
+    hsl(169deg 87% 58%) 33%,
+    hsl(163deg 89% 59%) 44%,
+    hsl(157deg 91% 59%) 56%,
+    hsl(152deg 93% 59%) 67%,
+    hsl(147deg 96% 58%) 78%,
+    hsl(144deg 98% 56%) 89%,
+    hsl(144deg 100% 50%) 100%
+  );}
+
+
 
 .home {
   margin-top: 3.5em;

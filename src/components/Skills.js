@@ -24,15 +24,15 @@ const Skills = () => {
       <h1>Skills</h1>
       <br />
       <Grid container spacing={2}>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}>
+        <Grid item lg={2} sm={1}></Grid>
+        <Grid item lg={2} sm={5}>
           <FontAwesomeIcon
             icon={faReact}
             style={{ color: "#ffffff", fontSize: "4em" }}
             className="animate__animated animate__pulse animate__infinite"
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item lg={2} sm={6}>
           <FontAwesomeIcon
             icon={faJsSquare}
             style={{ color: "#ffffff", fontSize: "4em" }}
@@ -40,7 +40,8 @@ const Skills = () => {
 
           />
         </Grid>
-        <Grid item xs={2}>
+        {/* <Grid item sm={1} lg={0}></Grid> */}
+        <Grid item lg={2} sm={6}>
           <FontAwesomeIcon
             icon={faNode}
             style={{ color: "#ffffff", fontSize: "4em" }}
@@ -48,7 +49,7 @@ const Skills = () => {
 
           />
         </Grid>
-        <Grid item xs={2}>
+        <Grid item lg={2} sm={6}>
           <FontAwesomeIcon
             icon={faAws}
             style={{ color: "#ffffff", fontSize: "4em" }}
@@ -56,10 +57,10 @@ const Skills = () => {
 
           />
         </Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={2}>
+        <Grid item lg={2} sm={0}></Grid>
+        <Grid item lg={2} sm={0}></Grid>
+        <Grid item lg={2} sm={1}></Grid>
+        <Grid item lg={2} sm={6}>
           {/* <FontAwesomeIcon icon={mongoIcon} style={{color:"#ffffff", fontSize:'4em'}}/> */}
           <CardMedia
             // className="icon"
@@ -70,7 +71,8 @@ const Skills = () => {
             title="mongoDB logo"
           />
         </Grid>
-        <Grid item xs={2}>
+        {/* <Grid item lg={0} sm={2}></Grid> */}
+        <Grid item lg={2} sm={4}>
           <CardMedia
             // className="icon"
             className="icon animate__animated animate__pulse animate__infinite"
@@ -90,7 +92,7 @@ const Skills = () => {
       <br />
       <br />
       <Grid container spacing={2}>
-        <Grid item xs={3}>
+        <Grid item sm={4} lg={3}>
           <Card
             variant="outlined"
             sx={{ backgroundColor: "#1F1F1F", color: "white" ,height:'100%',borderRadius: "20px",display:'flex',alignItems:'center',justifyContent:'center' }}
@@ -132,7 +134,7 @@ const Skills = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item sm={4} lg={3}>
           <Card
             variant="outlined"
             sx={{ backgroundColor: "#1F1F1F", color: "white" ,height:'100%',borderRadius: "20px",display:'flex',alignItems:'center',justifyContent:'center' }}
@@ -172,7 +174,7 @@ const Skills = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item sm={4} lg={3}>
           <Card
             variant="outlined"
             sx={{ backgroundColor: "#1F1F1F", color: "white" ,height:'100%',borderRadius: "20px",display:'flex',alignItems:'center',justifyContent:'center' }}
@@ -212,13 +214,13 @@ const Skills = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={3}>
+        <Grid item sm={6} lg={3}>
           <Card
             variant="outlined"
             sx={{ backgroundColor: "#1F1F1F", color: "white",height:'100%',borderRadius: "20px" ,display:'flex',alignItems:'center',justifyContent:'center' }}
           >
             <CardContent>
-              <Typography>Languages</Typography>
+              <Typography>Programming Languages</Typography>
               <br />
               <div
                 style={{
@@ -243,8 +245,8 @@ const Skills = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={4}>
+        <Grid item sm={0} lg={4}></Grid>
+        <Grid item sm={6} lg={4}>
           <Card
             variant="outlined"
             sx={{ backgroundColor: "#1F1F1F", color: "white",height:'100%' ,borderRadius: "20px",display:'flex',alignItems:'center',justifyContent:'center' }}
@@ -271,7 +273,7 @@ const Skills = () => {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={4}></Grid>
+        <Grid item sm={0} lg={4}></Grid>
       </Grid>
     </div>
   );
